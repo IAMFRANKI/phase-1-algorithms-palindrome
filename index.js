@@ -1,10 +1,13 @@
-function isPalindrome(word) {
+function isPalindrome(s) {
   // Write your algorithm here
+  //convert string to lowercase and remove spaces 
+  s = s.toLowerCase().replace(/\s/g, "");
+  if (s === s.split("").reverse().join("")) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
-/* 
-  Add your pseudocode here
-*/
 
 /*
   Add written explanation of your solution here
